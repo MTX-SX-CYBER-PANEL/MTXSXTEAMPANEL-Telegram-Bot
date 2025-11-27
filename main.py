@@ -4,7 +4,7 @@
 #      👨‍💻 𝘿𝙚𝙫: @UXD_0 
 #      📢   𝘾𝙝: @UXD_0
 #سنكر لا تسرق
-#تمت برمجة البوت بالكامل By masry 
+#تمت برمجة البوت بالكامل By MTX 
 #مش مسامح اي حد يخمط الملف بدون اذني
 #سيب الحقوق بدل ما انيكك اقسم بي الله 
 #حط توكن الضيف في سطر 180
@@ -17,7 +17,7 @@ import threading
 from telebot import types
 from byte import Encrypt_ID, encrypt_api
 
-TOKEN = "8215433591:AAElF2wqC2TdzGSDE2RPADWAc_drX1epuf8"
+TOKEN = "8479232901:AAHISK024UXSqENcIy3_zR-__B5Romwp1BM"
 bot = telebot.TeleBot(TOKEN)
 
 users_file = "users.json"
@@ -390,7 +390,7 @@ def help_command(message):
 <code>/remove [ID]</code>
 <i>➖ حذف صديق معين عبر المعرف.</i>
 
-<code>/masry</code>
+<code>/MTX</code>
 <i>⚙️ تفعيل البوت في المجموعة (للمطورين فقط).</i>
 
 ━━━━━━━━━━━━━━━━━━━━
