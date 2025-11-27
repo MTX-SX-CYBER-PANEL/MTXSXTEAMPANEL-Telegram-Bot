@@ -1,0 +1,5 @@
+protobuf_decoder==0.4.0
+pycryptodome==3.23.0
+pyTelegramBotAPI==4.28.0
+Requests==2.32.4
+telebot
