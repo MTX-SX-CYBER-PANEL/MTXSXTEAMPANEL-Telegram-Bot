@@ -1,13 +1,3 @@
-#بانل مقدم هديه من S1X     TEAM 
-#البانل صناعه عمك مصري بي الكامل 
-#╭───𓆩🛡️𓆪───╮
-#      👨‍💻 𝘿𝙚𝙫: @UXD_0 
-#      📢   𝘾𝙝: @UXD_0
-#سنكر لا تسرق
-#تمت برمجة البوت بالكامل By MTX 
-#مش مسامح اي حد يخمط الملف بدون اذني
-#سيب الحقوق بدل ما انيكك اقسم بي الله 
-#حط توكن الضيف في سطر 180
 import os
 import json
 import time
@@ -17,7 +7,7 @@ import threading
 from telebot import types
 from byte import Encrypt_ID, encrypt_api
 
-TOKEN = "8479232901:AAHISK024UXSqENcIy3_zR-__B5Romwp1BM"
+TOKEN = "8479232901:AAFIKOsbDWRvAlN3ARgrdtpQUSI9YVOHcMg"
 bot = telebot.TeleBot(TOKEN)
 
 users_file = "users.json"
@@ -62,7 +52,7 @@ def is_allowed_chat(message):
     return message.chat.id in allowed_chats
 
 # تفعيل البوت في المجموعة
-@bot.message_handler(commands=['MTX'])
+@bot.message_handler(commands=['MTX-ACTIVE-BOT'])
 def set_group(message):
     # تحقق إن اللي بيستخدم الأمر مطور
     if not is_developer(message.from_user.id):
@@ -81,7 +71,7 @@ def set_group(message):
 
 
 # ⛔ أمر /kill لإلغاء التفعيل
-@bot.message_handler(commands=['kill'])
+@bot.message_handler(commands=['MTX-DEACTIVATE-BOT'])
 def kill_group(message):
     # تحقق إن اللي بيستخدم الأمر مطور
     if not is_developer(message.from_user.id):
@@ -378,11 +368,11 @@ def help_command(message):
         return
     help_text = f"""
 ━━━━━━━━━━━━━━━━━━━━
-<b>✨🚀 〔 MTX BOT SX  〕🚀✨</b>
+<b>〔 MTX BOT SX  〕</b>
 ━━━━━━━━━━━━━━━━━━━━
-<i>💎 لوحة تحكم احترافية لإدارة الأصدقاء 💎</i>
+<i>MTX SX TEAM BOT FRIEND</i>
 
-<b>🧩 الأوامر:</b>
+<b> الأوامر:</b>
 
 <code>/bot [ID]</code>
 <i>➕ إضافة صديق لمدة يوم واحد.</i>
@@ -390,7 +380,10 @@ def help_command(message):
 <code>/remove [ID]</code>
 <i>➖ حذف صديق معين عبر المعرف.</i>
 
-<code>/MTX</code>
+<code>/MTX-ACTIVE-BOT</code>
+<i>⚙️ تفعيل البوت في المجموعة (للمطورين فقط).</i>
+
+<code>/MTX-DEACTIVATE-BOT</code>
 <i>⚙️ تفعيل البوت في المجموعة (للمطورين فقط).</i>
 
 ━━━━━━━━━━━━━━━━━━━━
